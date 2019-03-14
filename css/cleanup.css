@@ -1,1 +1,39 @@
-/* write your override styles here */
+/* This exercise can be done very simply by copy pasting the first line
+ of code that comes up when you hover over something indev tools and the
+putting body in front of it (except number 7) */
+
+/* Each block is weighted based on a score of format 0-0-0-0,
+whereby an inline style will add 1000 an ID will add 100, Classes, attributes
+and pseudo-classes will add 10, Elements and pseudo-elements will add 1.
+This is also a number with an infinitely high base, so that 11 or more elements
+would not override a single class.
+*/
+
+
+#wall .tag-1 {
+  display:none;
+}
+
+body #wall #tag-2 {
+  display:none;
+}
+
+body #wall #tag-3.slick.wicked {
+  display:none;
+}
+
+body #wall .parent #tag-4 {
+  display:none;
+}
+
+body div#wall .parent #tag-5.slick {
+  display: none;
+}
+
+body div#wall div.parent div:last-child div#tag-6 {
+  display: none;
+}
+
+body div#wall div.parent div:first-child > #tag-7.slick {
+  display:none;
+}
